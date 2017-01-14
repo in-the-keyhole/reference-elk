@@ -18,7 +18,7 @@ logstash:
         - ./conf:/conf
     links:
         - elasticsearch
-    command: logstash -f /conf/gelf.conf
+    command: logstash -f /conf/logstash.conf
 
 kibana:
     image: kibana
